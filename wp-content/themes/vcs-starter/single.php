@@ -2,15 +2,19 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
  <!-- start banner Area -->
- <section class="banner-area relative" id="home">    
+ <section class="banner-area relative" id="home" style="background-image: url(<?php the_post_thumbnail_url('large') ?>);">    
     <div class="overlay overlay-bg"></div>
     <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
-                    Blog Single               
+                    <?php the_title(); ?>               
                 </h1>   
-                <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="blog-single.html"> Blog Single</a></p>
+                <p class="text-white link-nav">
+                    <a href="<?php echo home_url(); ?>">
+                    <?php _e('Home') ?> </a>  <span class="lnr lnr-arrow-right"></span>  
+                    <a href="<?php the_permalink(); ?>"> <?php the_title();?> </a>
+                </p>
             </div>                                          
         </div>
     </div>
@@ -27,40 +31,16 @@ endif;
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="col-lg-8 post-list blog-post-list">
                 <div class="single-post">
-                    <img class="img-fluid" src="img/blog/p1.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Art</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Fashion</a></li>
-                    </ul>
-                    <a href="#">
+                    <div class="tags">
+                        <?php echo get_the_category_list(); ?>
+                    </div>
+                    <a href="<?php the_permalink(); ?>">
                         <h1>
-                            Cartridge Is Better Than Ever
-                            A Discount Toner
+                            <?php the_title(); ?>
                         </h1>
                     </a>
                     <div class="content-wrap">
-                        <p>
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
-                        </p>
-
-                        <p>
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
-                        </p>
-
-                        <blockquote class="generic-blockquote">
-                            “Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government.banking” 
-                        </blockquote>
-                        
-                        <p>
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
-                        </p>
-
-                        <p>
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
-                        </p>									
-
-
+                        <?php the_content(); ?>
                     </div>
                     <div class="bottom-meta">
                         <div class="user-details row align-items-center">
