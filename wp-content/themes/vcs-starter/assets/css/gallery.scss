@@ -1,0 +1,53 @@
+// GALLERY STYLES
+.photo-gallery {
+    .container {
+        text-align: center;
+        h1 {
+            padding: 25px 0;
+            font-size: 2.5rem;
+            margin-top: 15px;
+        }
+        .fancybox {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-bottom: 25px;
+            a {
+                width: 33%;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 7px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVENESS
+@media all and (max-width: 767px) {
+    .photo-gallery {
+        .container {
+            h1 {
+                padding: 15px 0px;
+                margin: 10px 5px;
+                font-size: 20px;
+            }
+            .fancybox {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+//------------------------------------------------------------//
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .photo-gallery {
+        margin: 0 5px;
+        .container {
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+}

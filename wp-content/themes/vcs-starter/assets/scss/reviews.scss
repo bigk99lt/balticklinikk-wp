@@ -1,0 +1,41 @@
+/*COMMENTS STYLES*/
+.comments {
+    text-align: center;
+    padding-top: 25px;
+    h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #0099ff;
+        border: solid 2px #0099ff;
+        margin: 0 20px 20px 20px;
+        border-radius: 20px;
+        font-size: 2.0rem;
+        padding: 25px 0 25px 0;
+    }
+}
+
+// -------------------------------------------------- //
+@media all and (max-width: 767px) {
+.comments {
+    padding-top: 10px;
+    .container {
+        h2 {
+            margin: 0 5px;
+            font-size: 20px;
+            padding: 15px 0;
+        }
+    }
+}
+}
+//-----------------------------------------------------//
+@media all and (min-width: 768px) and (max-width: 992px) {
+.comments {
+    .container {
+        h2 {
+            margin: 0 5px;
+            font-size: 25px;
+        }
+    }
+}
+}

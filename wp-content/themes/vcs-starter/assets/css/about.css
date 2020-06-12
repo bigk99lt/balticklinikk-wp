@@ -1,0 +1,31 @@
+/* ABOUT STYLES */
+.our_intro {
+  margin-top: 25px;
+}
+
+.our_intro .container {
+  text-align: center;
+}
+
+.our_intro .container .title {
+  background-color: #0099ff;
+  padding: 25px 0 25px 0;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.our_intro .container .title h2 {
+  font-size: 2.0rem;
+}
+
+.our_intro .container .text {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.our_intro .container .text div {
+  font-size: 1.5rem;
+  color: #7d625a;
+  padding-bottom: 40px;
+}

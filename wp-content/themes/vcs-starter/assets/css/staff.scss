@@ -1,0 +1,271 @@
+// STAFF STYLES
+.staff {
+    margin-top: 25px;
+    .container {
+        text-align: center;
+        h1 {
+            background-color: #0099ff;
+            padding: 25px 0 25px 0;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }       
+        .dentist {
+            display: flex;
+            margin: 50px 0 50px 0;
+            .dentist-picture {
+                width: 40%;
+                height: 60vh;
+                background-image: url(../images/staff/pooyan.png);
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin-top: -30px;
+                // transform: rotate(90deg);
+            }
+            .dentist-background {
+                width: 60%;
+                text-align: center;
+                margin-right: 50px;
+                h2 {
+                    font-size: 1.7rem;
+                    color: #0099ff;
+                    border: solid 4px #0099ff;
+                    border-radius: 25px;
+                    padding: 20px 0 20px 0;
+                    margin-bottom: 75px;
+                }
+                div {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: rgb(125, 98, 90);
+                    margin-bottom: 75px;
+                    text-transform: uppercase;
+                }
+                // a {
+                //     color: #0099ff;                
+                //     border: solid 3px #0099ff;
+                //     font-size: 1.5rem;
+                //     font-weight: bold;                
+                //     padding: 10px;
+                //     border-radius: 25px;            
+                // }
+                // a:hover {
+                //     transition: 0.3s ease-in-out;
+                //     background-color: #0099ff;
+                //     color: #ffffff;
+                // }
+            }
+            
+        }
+        .monika {
+            display: flex;
+            margin: 50px 0 50px 0;
+            .monika-background {
+                width: 60%;
+                text-align: center;
+                margin-right: 50px;
+                h2 {
+                    font-size: 1.7rem;
+                    color: #0099ff;
+                    border: solid 4px #0099ff;
+                    border-radius: 25px;
+                    padding: 20px 0 20px 0;
+                    margin-bottom: 75px;
+                }
+                div {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: rgb(125, 98, 90);
+                    margin-bottom: 75px;
+                    text-transform: uppercase;
+                }
+                // a {
+                //     color: #0099ff;                
+                //     border: solid 3px #0099ff;
+                //     font-size: 1.5rem;
+                //     font-weight: bold;                
+                //     padding: 10px;
+                //     border-radius: 25px;            
+                // }
+                // a:hover {
+                //     transition: 0.3s ease-in-out;
+                //     background-color: #0099ff;
+                //     color: #ffffff;
+                // }
+            }
+            .monika-picture {
+                width: 40%;
+                height: 60vh;
+                background-image: url(../images/naujos_03.2020/monika.jpg);
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin-top: -30px;
+            }
+        }
+    }
+}
+// --------------------------------------------- //
+// RESPONSIVNESS
+@media all and (max-width: 767px) {
+.staff {
+    margin: 10px 5px 0 5px;
+    .container {
+        h1 {
+            padding: 10px 0;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .dentist {
+            margin: 20px 0;
+            flex-wrap: wrap;
+            .dentist-picture {
+                width: 100%;                
+                background-size: 90%;
+                margin-top: 0;
+            }
+            .dentist-background {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                h2 {
+                    font-size: 15px;
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+                }
+                div {
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .monika {
+            flex-wrap: wrap;
+            .monika-background {
+                width: 100%;
+                margin: 0;
+                h2 {
+                    font-size: 15px;
+                    padding: 10px 0;
+                    margin-bottom: 10px; 
+                }
+                div {
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+            .monika-picture {
+                width: 100%;
+                background-size: 90%;
+                margin-top: 0;    
+            }
+        }
+        .ewa {
+            flex-wrap: wrap;
+            .ewa-picture {
+                width: 100%;
+                background-size: 90%;
+                margin-top: 0;                
+            }
+            .ewa-background {
+                width: 100%;
+                margin: 0;
+                h2 {
+                    font-size: 17px;
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+                }
+                div {
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+}
+// ----------------------------------------------------- //
+@media all and (min-width: 768px) and (max-width: 992px) {
+.staff {
+    margin: 10px 5px 0 5px;
+    .container{
+        h1 {
+           padding: 15px 0;
+           font-size: 25px;
+           margin-bottom: 10px; 
+        }
+        .dentist {
+            flex-wrap: wrap;
+            margin: 20px 0 70px 0;
+            .dentist-picture {
+                width: 100%;
+                background-size: 90%;
+                margin: 0;
+            }
+            .dentist-background {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 25px;
+                h2 {
+                    font-size: 25px;
+                    padding: 15px 0;                                        
+                    margin-bottom: 25px;
+                }
+                div {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .monika {
+            flex-wrap: wrap;
+            margin: 20px 0 70px 0;
+            .monika-background {
+                width: 100%;
+                margin-right: 0;
+                h2 {
+                    font-size: 25px;
+                    padding: 15px 0;
+                    margin-bottom: 25px;
+                }
+                div {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+            }
+            .monika-picture {
+                width: 100%;
+                background-size: 90%;
+                margin-top: 0;
+                margin-bottom: 25px;
+            }
+        }
+        .ewa {
+            flex-wrap: wrap;
+            margin: 20px 0 70px 0;
+            .ewa-picture {
+                width: 100%;
+                background-size: 90%;
+                margin-top: 0;
+                margin-bottom: 25px;
+            }
+            .ewa-background {
+                width: 100%;
+                margin-left: 0;
+                h2 {
+                    font-size: 25px;
+                    padding: 10px 0;
+                    margin-bottom: 25px;
+                }
+                div {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+}

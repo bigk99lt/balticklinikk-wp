@@ -1,0 +1,246 @@
+.staff {
+  margin-top: 25px;
+}
+.staff .container {
+  text-align: center;
+}
+.staff .container h1 {
+  background-color: #0099ff;
+  padding: 25px 0 25px 0;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+.staff .container .dentist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 50px 0;
+}
+.staff .container .dentist .dentist-picture {
+  width: 40%;
+  height: 60vh;
+  background-image: url(../images/staff/pooyan.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -30px;
+}
+.staff .container .dentist .dentist-background {
+  width: 60%;
+  text-align: center;
+  margin-right: 50px;
+}
+.staff .container .dentist .dentist-background h2 {
+  font-size: 1.7rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 20px 0 20px 0;
+  margin-bottom: 75px;
+}
+.staff .container .dentist .dentist-background div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7d625a;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+.staff .container .monika {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 50px 0;
+}
+.staff .container .monika .monika-background {
+  width: 60%;
+  text-align: center;
+  margin-right: 50px;
+}
+.staff .container .monika .monika-background h2 {
+  font-size: 1.7rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 20px 0 20px 0;
+  margin-bottom: 75px;
+}
+.staff .container .monika .monika-background div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7d625a;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+.staff .container .monika .monika-picture {
+  width: 40%;
+  height: 60vh;
+  background-image: url(../images/naujos_03.2020/monika.jpg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -30px;
+}
+
+@media all and (max-width: 767px) {
+  .staff {
+    margin: 10px 5px 0 5px;
+  }
+  .staff .container h1 {
+    padding: 10px 0;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .staff .container .dentist {
+    margin: 20px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .staff .container .dentist .dentist-picture {
+    width: 100%;
+    background-size: 90%;
+    margin-top: 0;
+  }
+  .staff .container .dentist .dentist-background {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .staff .container .dentist .dentist-background h2 {
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .staff .container .dentist .dentist-background div {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .staff .container .monika {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .staff .container .monika .monika-background {
+    width: 100%;
+    margin: 0;
+  }
+  .staff .container .monika .monika-background h2 {
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .staff .container .monika .monika-background div {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .staff .container .monika .monika-picture {
+    width: 100%;
+    background-size: 90%;
+    margin-top: 0;
+  }
+  .staff .container .ewa {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .staff .container .ewa .ewa-picture {
+    width: 100%;
+    background-size: 90%;
+    margin-top: 0;
+  }
+  .staff .container .ewa .ewa-background {
+    width: 100%;
+    margin: 0;
+  }
+  .staff .container .ewa .ewa-background h2 {
+    font-size: 17px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .staff .container .ewa .ewa-background div {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .staff {
+    margin: 10px 5px 0 5px;
+  }
+  .staff .container h1 {
+    padding: 15px 0;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .staff .container .dentist {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px 0 70px 0;
+  }
+  .staff .container .dentist .dentist-picture {
+    width: 100%;
+    background-size: 90%;
+    margin: 0;
+  }
+  .staff .container .dentist .dentist-background {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+  .staff .container .dentist .dentist-background h2 {
+    font-size: 25px;
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
+  .staff .container .dentist .dentist-background div {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .staff .container .monika {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px 0 70px 0;
+  }
+  .staff .container .monika .monika-background {
+    width: 100%;
+    margin-right: 0;
+  }
+  .staff .container .monika .monika-background h2 {
+    font-size: 25px;
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
+  .staff .container .monika .monika-background div {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .staff .container .monika .monika-picture {
+    width: 100%;
+    background-size: 90%;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .staff .container .ewa {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px 0 70px 0;
+  }
+  .staff .container .ewa .ewa-picture {
+    width: 100%;
+    background-size: 90%;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .staff .container .ewa .ewa-background {
+    width: 100%;
+    margin-left: 0;
+  }
+  .staff .container .ewa .ewa-background h2 {
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+  }
+  .staff .container .ewa .ewa-background div {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,183 @@
+.prices {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.prices h1 {
+  text-align: center;
+}
+.prices .price-title {
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+.prices .price-title .price-name {
+  width: 50%;
+  font-size: 1.7rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 20px 0 20px 0;
+  margin: 0 25px 0 25px;
+}
+.prices .price-title .price-number {
+  width: 50%;
+  font-size: 1.7rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 20px 0 20px 0;
+  margin: 0 25px 0 25px;
+}
+.prices .price-container {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0099ff;
+}
+.prices .price-container .pricing .basic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.prices .price-container .pricing .basic li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing h3 {
+  padding: 15px 0;
+  color: #0099ff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: #0099ff solid 1px;
+  border-radius: 25px;
+  margin: 20px 300px;
+}
+.prices .price-container .pricing .estetic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .estetic li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing .root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .root li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing .prot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .prot li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing .surgery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .surgery li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing .whitening {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .whitening li {
+  width: 50%;
+  padding: 15px 0;
+}
+.prices .price-container .pricing .periodontic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prices .price-container .pricing .periodontic li {
+  width: 50%;
+  padding: 15px 0;
+}
+
+@media all and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .prices {
+    margin: 10px 0;
+  }
+  .prices .container h1 {
+    font-size: 20px;
+    padding: 15px 0;
+    margin: 0 5px;
+  }
+  .prices .price-title {
+    margin: 15px 0;
+  }
+  .prices .price-title .price-name {
+    font-size: 15px;
+    padding: 5px 0;
+    margin: 10px 5px;
+    border: solid 2px #0099ff;
+  }
+  .prices .price-title .price-number {
+    font-size: 15px;
+    padding: 5px 0;
+    margin: 10px 5px;
+    border: solid 2px #0099ff;
+  }
+  .prices .price-container .pricing ul {
+    font-size: 9px;
+    font-weight: normal;
+  }
+  .prices .price-container .pricing h3 {
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 10px 10px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .prices .container h1 {
+    font-size: 25px;
+    padding: 20px 0;
+  }
+  .prices .container .price-title .price-name {
+    font-size: 20px;
+  }
+  .prices .container .price-title .price-number {
+    font-size: 20px;
+  }
+  .prices .container .price-container .pricing ul {
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .prices .container .price-container .pricing h3 {
+    margin: 20px 50px;
+  }
+}

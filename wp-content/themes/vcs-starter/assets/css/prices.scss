@@ -1,0 +1,203 @@
+// PRICES STYLES
+.prices {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    h1 {
+        text-align: center;
+    }
+    .price-title {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        .price-name {
+            width: 50%;
+            font-size: 1.7rem;
+            color: #0099ff;
+            border: solid 4px #0099ff;
+            border-radius: 25px;
+            padding: 20px 0 20px 0;
+            margin: 0 25px 0 25px;
+        }
+        .price-number {
+            width: 50%;
+            font-size: 1.7rem;
+            color: #0099ff;
+            border: solid 4px #0099ff;
+            border-radius: 25px;
+            padding: 20px 0 20px 0;
+            margin: 0 25px 0 25px;
+        }
+    }
+    .price-container {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #0099ff;
+        .pricing {           
+            .basic {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                    
+                }
+            }
+            h3 {
+                padding: 15px 0;
+                color: #0099ff;
+                font-size: 1.4rem;
+                font-weight: bold;
+                border: #0099ff solid 1px;
+                border-radius: 25px;
+                margin: 20px 300px;
+            }
+            .estetic {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }
+            .root {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }
+            .prot {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }
+            .surgery {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }
+            .whitening {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }    
+            .periodontic {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 15px 0;
+                }
+            }
+           
+        }
+        // .price-list {
+        //     width: 50%;
+        //     ul {
+        //         li {
+        //             color: #0099ff;
+        //             padding: 20px;
+        //         }
+        //     }
+        // }
+        // .price-value {
+        //     width: 50%;
+        //     ul{
+        //         li {
+        //             color: #0099ff;
+        //             padding: 20px;
+        //             text-transform: none;
+        //         }
+        //     }
+        // }
+    }
+}
+
+//---------------------------------------------------//
+
+// RESPONSIVENESS
+@media all and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+    .prices {
+        margin: 10px 0;
+        .container {
+            h1 {
+                font-size: 20px;
+                padding: 15px 0;
+                margin: 0 5px;
+            }
+        }
+        .price-title {
+            margin: 15px 0;
+            .price-name {
+                font-size: 15px;
+                padding: 5px 0;
+                margin: 10px 5px;
+                border: solid 2px #0099ff;
+            }
+            .price-number {
+                font-size: 15px;
+                padding: 5px 0;
+                margin: 10px 5px;
+                border: solid 2px #0099ff;
+            }
+        }
+        .price-container {
+            .pricing {
+                ul {
+                    font-size: 9px;
+                    font-weight: normal;
+                }
+                h3 {
+                    font-size: 14px;
+                    padding: 10px 0;
+                    margin: 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------------//
+@media all and (min-width: 768px) and (max-width: 992px) {
+.prices {
+    .container {
+        h1 {
+            font-size: 25px;
+            padding: 20px 0;
+        }
+        .price-title {
+            .price-name {
+                font-size: 20px;
+            }
+            .price-number {
+                font-size: 20px;
+            }
+        }
+        .price-container {
+            .pricing {
+                ul {
+                    font-weight: normal;
+                    font-size: 15px;
+                    padding: 10px 20px;
+                }
+                h3 {
+                    margin: 20px 50px;
+                }
+            }
+        }
+    }
+}
+}

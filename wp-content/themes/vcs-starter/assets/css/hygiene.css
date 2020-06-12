@@ -1,0 +1,90 @@
+.hygiene h1 {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.hygiene h1 div {
+  font-size: 1.5rem;
+  font-style: italic;
+  border-top: 3px solid #fff;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.hygiene .staff-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hygiene .staff-main .staff-big-pic {
+  width: 50%;
+  background-image: url(../images/staff/monika.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 100vh;
+  margin-bottom: 25px;
+}
+
+.hygiene .staff-main .monika-info {
+  width: 45%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hygiene .staff-main .monika-info .languages {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 15px 0 15px 0;
+}
+
+.hygiene .staff-main .monika-info .lang-list {
+  font-style: italic;
+  padding: 20px 0 20px 0;
+  margin-bottom: 50px;
+}
+
+.hygiene .staff-main .monika-info .lang-list li {
+  padding: 5px 0 5px 0;
+  color: #7d625a;
+}
+
+.hygiene .staff-main .monika-info .education {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 15px 0 15px 0;
+}
+
+.hygiene .staff-main .monika-info .education-info {
+  font-style: italic;
+  padding: 25px 0 25px 0;
+  margin-bottom: 50px;
+  color: #7d625a;
+}
+
+.hygiene .staff-main .monika-info .service-main {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0099ff;
+  border: solid 4px #0099ff;
+  border-radius: 25px;
+  padding: 15px 0 15px 0;
+}
+
+.hygiene .staff-main .monika-info .service-list {
+  font-style: italic;
+  padding: 20px 0 20px 0;
+  margin-bottom: 50px;
+}
+
+.hygiene .staff-main .monika-info .service-list li {
+  padding: 5px 0 5px 0;
+  color: #7d625a;
+}

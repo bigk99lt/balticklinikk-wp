@@ -1,0 +1,102 @@
+.contact-page {
+    padding: 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+    .container {
+        h1 {
+            padding: 25px 0;
+            font-size: 2.5rem;
+        }       
+        .contact-info {
+            color: rgb(125, 98, 90);
+            padding-bottom: 25px;
+            .address {
+                padding-bottom: 20px;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+            div {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                padding-bottom: 10px;
+                strong {
+                    font-weight: bold;
+                }
+            }
+            .hop {
+                font-weight: bold;
+                padding-top: 10px;
+                div {
+                    font-weight: normal;
+                    padding-top: 10px;
+                }
+              }
+            .phone-nr {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+        }
+        .location {
+            .map-title {
+                font-weight: bold;
+                font-size: 1.2rem;
+                padding: 25px 0;
+                color: rgb(125, 98, 90);
+            }
+        }
+    }
+}
+
+// --------------------------------------------------------------- //
+// RESPONSIVENESS
+
+@media all and (max-width: 767px) {
+    .contact-page {
+        padding: 15px 0;
+        margin: 0 5px;
+        .container {
+            h1 {
+                font-size: 20px;
+                padding: 15px 0;
+            }
+            .contact-info {
+                padding-bottom: 10px;
+                .address {
+                    padding-bottom: 10px;
+                    font-size: 15px;
+                }
+                div {
+                    font-size: 10px;
+                    padding-bottom: 5px;
+                }
+                .phone-nr {
+                    padding: 15px 0;
+                }
+            }
+            .location {
+                .map-title {
+                    font-size: 15px;
+                }
+                iframe {
+                    width: 350px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+//---------------------------------------------------------//
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .contact-page {
+        margin: 0 5px;
+        .container {
+            .location {
+                iframe {
+                    width: 750px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
