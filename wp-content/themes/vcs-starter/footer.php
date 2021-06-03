@@ -3,25 +3,30 @@
     <div class="flex_container">
         <ul>
             <li>
-                Baltic Tannklinikk
+                <?php the_field('title_footer', 'options');?>
             </li>
             <li>
-                Nedre Storgate 29
+               <?php echo get_field('address_footer', 'options');?>
+            </li>
+            <li>
+                <a href="tel: <?php the_field('phone_footer', 'options')?>"><?php the_field('phone_footer', 'options')?></a>
                 <br>
-                3015 Dramen
+                <a href="mailto:<?php the_field('email_footer', 'options');?>"><?php the_field('email_footer', 'options');?></a>
             </li>
             <li>
-                <a href="tel:+4741341010">+4741341010</a>
-                <br>
-                <a href="mailto:info@baltictannklinikk.no">E-Mail</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/baltic.tannklinikk.9" target="_blank">
-                    <img src="assets/icons/facebook2.svg" alt="facebook_icon">
-                </a>
-                <a href="https://www.instagram.com/baltictannklinikk/" target="_blank">
-                    <img src="assets/icons/instagram-logo.svg" alt="instagram_icon">    
-                </a>
+                <?php 
+                     if( have_rows('ho_social_menu_repeater', 'options') ):
+                            while ( have_rows('ho_social_menu_repeater', 'options') ) : the_row();
+                                $link = get_sub_field('link');
+                                $image = get_sub_field('icon');
+                                ?>
+                                    <a href="<?php echo $link['url']; ?>">
+                                        <img src="<?php echo $image['url']; ?>" alt="social_icon">
+                                    </a>
+                                <?php
+                            endwhile;
+                        endif;
+                ?>
             </li>
             <li>
                 Made by Karolis

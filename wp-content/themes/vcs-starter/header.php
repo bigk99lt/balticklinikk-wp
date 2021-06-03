@@ -11,51 +11,62 @@
     
 </head>
 <body>
-    <!-- JQUERY OPACITY CHANGE ON SCROLL (IF CLIENT DESIRES IN THE FUTURE) -->
-    <!-- <div class="op">
-        <i class="fas fa-arrow-down"></i>
-    </div> -->
 <!-- HEADER STARTS -->
 <header>
     <div class="container flex_container">
-            <div class="lang">
-                <a href="index.html">
-                    <img src="assets/icons/norway.png" alt="norwegian_flag">
-                </a>
-                <a href="index_en.html">
-                    <img src="assets/icons/united-kingdom.svg" alt="british_flag">
-                </a>
-                <a href="index_lt.html">
-                    <img src="assets/icons/lithuania.svg" alt="lithuanian_flag">
-                </a>
-                <a href="index_pl.html">
-                    <img src="assets/icons/poland.svg" alt="polish_flag">
-                </a>
-                <a href="index_ru.html">
-                    <img src="assets/icons/russia.svg" alt="russian_flag">
-                </a>
-                
-            </div>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/baltic.tannklinikk.9" target="_blank">
-                            <img src="assets/icons/facebook2.svg" alt="facebook_icon">
+        <div class="lang">
+        <?php
+
+            if( have_rows('ho_language_menu_repeater', 'options') ):
+                while ( have_rows('ho_language_menu_repeater', 'options') ) : the_row();
+                    $link = get_sub_field('link');
+                    $image = get_sub_field('icon');
+                    ?>
+                        <a href="<?php echo $link['url']; ?>">
+                            <img src="<?php echo $image['url']; ?>" alt="norwegian_flag">
                         </a>
-                        <a href="https://www.instagram.com/baltictannklinikk/" target="_blank">
-                            <img src="assets/icons/instagram-logo.svg" alt="instagram_icon">    
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+4741341010">+4741341010</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@baltictannklinikk.no">
-                            <img src="assets/icons/envelope2.svg" alt="envelope_icon" class="env">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <?php
+                endwhile;
+            endif;
+
+            ?>
+        </div>
+        <div class="social">
+            <ul >
+                <li style="display: flex;">
+                    <?php
+                        if( have_rows('ho_social_menu_repeater', 'options') ):
+                            while ( have_rows('ho_social_menu_repeater', 'options') ) : the_row();
+                                $link = get_sub_field('link');
+                                $image = get_sub_field('icon');
+                                ?>
+                                    <a href="<?php echo $link['url']; ?>">
+                                        <img src="<?php echo $image['url']; ?>" alt="social_icon">
+                                    </a>
+                                <?php
+                            endwhile;
+                        endif;
+                    ?>    
+                </li>
+                <li>
+                    <a href="tel: <?php the_field('ho_phone', 'options'); ?>"><?php the_field('ho_phone', 'options'); ?></a>
+                </li>
+                <li>
+                    <?php
+                    if( have_rows('ho_email_repeater', 'options') ):
+                        while ( have_rows('ho_email_repeater', 'options') ) : the_row();
+                        $image = get_sub_field('icon');
+                        ?>
+                                <a href="mailto:<?php the_field('email_no');?>">
+                                    <img src="<?php echo $image['url']; ?>" alt="email_icon">
+                                </a>
+                            <?php
+                        endwhile;
+                    endif;
+                    ?> 
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 <!-- HEADER ENDS -->
@@ -91,26 +102,6 @@
                 <div class="burger">
                     Menu
                 </div>
-                <!-- <ul class="nav">
-                    <li>
-                        <a href="about.html">Om Oss</a>
-                    </li>
-                    <li>
-                        <a href="prices.html">Pris</a>
-                    </li>
-                    <li>
-                        <a href="staff.html">Spesialister</a>
-                    </li>
-                    <li>
-                        <a href="reviews.html">Anmeldelser</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Galleri</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Kontakter</a>
-                    </li>
-                </ul> -->
             </nav>
         </div>
     </nav>

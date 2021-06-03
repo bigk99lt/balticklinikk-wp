@@ -11,7 +11,7 @@ get_header();
     get_template_part('partials/services');
     get_template_part('partials/gallery');
     get_template_part('partials/location');
-    get_template_part('partials/news');
+   
 ?>
 
 <!-- Start Point -->
